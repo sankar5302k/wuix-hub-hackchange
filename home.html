@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />s
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    img.logo {
+      object-fit: fill;
+      height: 4.2rem;
+      filter: blur(30%);
+    }
+
+    li.navhead {
+      font-size: 1.3rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      .navbarx {
+        margin: auto;
+      }
+    }
+
+    /*@media(max-width: 600px) {
+            .imgd {}
+        }*/
+
+    div.title {
+      font-size: 2.3rem;
+      color: #ffc320;
+      text-shadow: 3px 3px 3px rgb(0, 0, 0);
+      font-weight: 800;
+      transition: 0.5s;
+      margin-top: 12rem;
+      margin: auto;
+    }
+
+    .searchu {
+      margin-top: 1 rem;
+    }
+
+    div.title:hover {
+      transform: translateY(-0.50em);
+      filter: drop-shadow(#ff7d12 0.3rem 0.3rem 0.3rem);
+    }
+
+    .wuixy {
+
+      color: #ffc320;
+      text-shadow: 3px 3px 3px rgb(0, 0, 0);
+      transition: 0.5s;
+    }
+
+    .wuixy:hover {
+      transform: translateY(-0.50em);
+    }
+
+    .whycontent {
+      font-size: 1.6rem;
+    }
+
+    article {
+      font-size: 2rem;
+      float: left;
+      padding: 20px;
+      width: 50%;
+      background-color: rgba(33, 37, 41, 1);
+      color: white;
+      margin-top: 5rem;
+    }
+
+    nav.img {
+      float: right;
+      width: 40%;
+      background-color: rgba(33, 37, 41, 1);
+      height: auto;
+      margin-top: 5rem;
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media (max-width: 900px) {
+      article {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 1.2rem;
+      }
+
+      nav.img,
+      article {
+        width: 100%;
+        height: auto;
+      }
+
+      .imgd {
+        display: block;
+        margin: auto;
+        width: 100%;
+      }
+
+
+
+      .procards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+
+
+
+
+    }
+
+    .cc {
+      font-size: 3.5rem;
+      color: #ffc320;
+      font-weight: 600;
+      margin-left: 4rem;
+      text-shadow: 3px 3px 3px rgb(0, 0, 0);
+      transition: 0.5s;
+    }
+
+    .cc:hover {
+      transform: translateY(-0.50em);
+      filter: drop-shadow(#ff7d12 0.3rem 0.3rem 0.3rem);
+    }
+
+    @media (max-width: 900px) {
+      .cc {
+        font-size: 1.5rem;
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+        ;
+
+      }
+    }
+
+
+
+
+    .protitle {
+      font-size: 3.5rem;
+      color: #ffc320;
+      text-shadow: 3px 3px 3px rgb(0, 0, 0);
+      font-weight: 700;
+      padding-left: 3rem;
+      transition: 0.5s;
+    }
+
+    .protitle:hover {
+      transform: translateY(-0.50em);
+      filter: drop-shadow(#ff7d12 0.3rem 0.3rem 0.3rem);
+    }
+
+    .rec {
+      width: 100%;
+    }
+
+    @media(min-width:900px) {
+      .cards {
+        display: inline-flex;
+        gap: 5rem;
+      }
+
+
+    }
+
+    .c1 {
+      border: 2px solid #ffa260;
+      transition: 0.1s;
+    }
+
+    .c1:hover {
+      box-shadow: 0 0.9em 0.9em -0.4em #ffc320;
+      transform: translateY(-0.50em);
+    }
+
+
+    .mhead:hover {
+      transform: translateY(-0.50em);
+      filter: drop-shadow(#ff7d12 0.3rem 0.3rem 0.3rem);
+    }
+
+    .c2 {
+      border: 2px solid #ffa260;
+      transition: 0.2s;
+    }
+
+    .c2:hover {
+      box-shadow: 0 0.9em 0.9em -0.4em #ff2d26;
+      transform: translateY(-0.50em);
+    }
+
+    .caros {
+      transition: 0.5s;
+    }
+
+    .caros:hover {
+      transform: translateY(-0.50em);
+    }
+  </style>
+</head>
+
+
+<body class=" bg-dark container-fluid">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbare" style="color: white;">
+      <a class="navbar-brand" href="./homehub.html"><img src="./wuixy.png" alt="" class="logo"></a>
+      <button class="navbar-toggler" data-bs-target="#my-nav" data-bs-toggle="collapse" aria-controls="my-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto navbarx">
+          <li class="nav-item searchu">
+            <form class="container-fluid" data-bs-theme="dark">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">WUIX ID</span>
+                <input type="text" class="form-control " placeholder="Username" aria-label="Username"
+                  aria-describedby="basic-addon1" id="text1" onclick="si()">
+              </div>
+            </form>
+          </li>
+          <li class="nav-item navhead">
+            <a class="nav-link" href="#sec1">Why WUIX HUB ?</a>
+          </li>
+          <li class="nav-item navhead">
+            <a class="nav-link" href="#sec2">Creators Connect</a>
+          </li>
+          <li class="nav-item navhead">
+            <a class="nav-link" href="#sec3">MarketPlace</a>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main data-bs-spy="scroll" data-bs-target="#navbare" data-bs-smooth-scroll="true">
+    <br>
+    <br>
+    <br>
+
+    <section id="sec1">
+
+
+
+      <article>
+        <p>
+          <span class="wuixy"> WUIX Hub </span>provide a dedicated community for Web Developers and UI/UX designers to
+          post their personalized portfolios<br>
+          <br> Our plan helps Students to learn exclusively from working professionals.<br>
+          <br> We provide specialized marketplace for buying and selling templates, hindering their ability to monetize
+          their skills and creativity<br>
+          <br> We provide a cloud workspace to collaborate
+        </p>
+      </article>
+
+
+      <nav class="img">
+        <img src="./img1.jpg" alt="" class="imgd" data-aos="flip-up" data-aos-duration="1500">
+        <nav>
+
+
+    </section>
+    <br>
+    <hr style="color:azure; width:100%;">
+
+    <section id="sec2">
+      <div class="cc">
+        Creator's Connect
+      </div>
+
+      <div class="rec" align="center">
+
+
+        <br>
+        <div class="reccaro">
+          <div id="carouselExampleCaptions" class="carousel slide" align="center">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active caros">
+                <img src="./Sankara narayana.png" class="d-block w-75 h-25" alt="..." onclick="sankar()">
+
+              </div>
+              <div class="carousel-item caros">
+                <img src="./saj.png" class="d-block w-75 h-25" alt="..." onclick="sajee()">
+
+              </div>
+              <div class="carousel-item caros">
+                <img src="./abi.png" class=" d-block w-75 h-25" alt="...">
+
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+
+      <Br>
+      <br>
+      <div class="procards">
+
+        <br>
+        <br>
+        <br>
+        <div class="cards">
+          <div class="card c1" style="width: 18rem;" data-aos="flip-up" data-aos-duration="1000">
+            <img src="./Sankara narayana.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sankara Narayana</h5>
+              <p class="card-text">Hi, This is Sankara Narayana . Check out my portfolio for amazing designs</p>
+              <a href="./sankar.html" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+          <br><br>
+          <br>
+          <div class="card c1" style="width: 18rem;" data-aos="flip-up" data-aos-duration="1000">
+            <img src="./saj.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Sajeetha</h5>
+              <p class="card-text">Hi, This is Sajeetha . Check out my portfolio for amazing designs</p>
+              <a href="./sajee.html" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+          <br><br>
+          <br>
+          <div class="card c1" style="width:18rem" data-aos="flip-up" data-aos-duration="1000">
+            <img src="./abi.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Abishek</h5>
+              <p class="card-text">Hi, This is Abishek ganesh . Check out my portfolio for amazing designs</p>
+              <a href="#" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+          <br><br>
+          <br>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+      </div>
+      <hr style="color:azure; height:3rem; width:100%;">
+    </section>
+    <section id="sec3">
+
+      <br>
+      <br>
+      <br>
+
+      <div class="carde" align="center">
+        <div class="card c2" style="width: 18rem;" data-aos="flip-up" data-aos-duration="1000">
+          <img src="./UX-UI-Design.jpg" class="card-img-left" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">MarketPlace</h5>
+            <p class="card-text">Buy and Sell website templates and UI/UX designs on MarketPlace</p>
+            <a href="./Market Place/TEST 2.html" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr style="color:azure;">
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+    function si() {
+      var a = document.getElementById("text1").value; // Use .value to get input value
+      if (a === "sajeetha") { // Trim input to remove leading/trailing spaces
+        window.location.href = "./sajee.html";
+      } else if (a === "sankar") {
+        window.location.href = "./sankar.html";
+      }
+    }
+
+    function sankar() {
+      window.location.href = "./sankar.html";
+    }
+
+    function sajee() {
+      window.location.href = "./sajee.html";
+    }
+  </script>
+</body>
+
+</html>
